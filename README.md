@@ -65,6 +65,10 @@ If this fits your usecase better, you can also select the "Import from url" opti
 
 <p align="center"><img style="max-width:100%" src="https://user-images.githubusercontent.com/52042414/158480653-568f6a91-bcd4-4009-b927-4d5ffc400658.png"></p>
 
+When importing publicly available models, a text file named **sf_attributions** will automatically be created inside Blender. The creator credits and license informations for the downloaded models will be appended to this file. It can be accessed in the **Text Editor** workspace.
+
+<p align="center"><img style="max-width:100%" src="https://dl.dropbox.com/scl/fi/wbj15y2wfekxof06r9v0a/Screenshot-2024-06-15-155042.png?rlkey=8pk0yk768znwu7pxc8yk7e0cv&st=17d46hjr&dl=0"></p>
+
 <br>
 
 ## Export a model to Sketchfab

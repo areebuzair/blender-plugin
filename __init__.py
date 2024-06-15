@@ -1780,6 +1780,8 @@ class SketchfabDownloadModel(bpy.types.Operator):
     def execute(self, context):
         skfb_api = context.window_manager.sketchfab_browser.skfb_api
         skfb_api.download_model(self.model_uid)
+        attribution = SF_Attributions()
+        attribution.request_model_attributions(self.model_uid)
         return {'FINISHED'}
 
 
@@ -2404,6 +2406,43 @@ def register():
 
     # If a cache path was set in preferences, use it
     updateCacheDirectory(None, context=bpy.context)
+
+class SF_Attributions:
+
+    def append_to_attributions(self, text): 
+        # Check if "sf_attributions" text file already exists
+        if "sf_attributions" not in bpy.data.texts:
+            # Create a new text file named "sf_attributions"
+            text_block = bpy.data.texts.new(name="sf_attributions")
+            print("Text file 'sf_attributions' created.")
+        else:
+            # Get the existing text file
+            text_block = bpy.data.texts["sf_attributions"]
+
+         # Move the cursor to the end of the text block
+        text_block.cursor_set(len(text_block.as_string()))
+        
+        # Append the new text
+        text_block.write(text + "\n")
+        print("Credits appended to 'sf_attributions' file.")
+
+    def request_model_attributions(self, uid, callback=None):
+        self.uid = uid
+        callback = self.handle_model_attributions if callback is None else callback
+        url = Config.SKETCHFAB_MODEL + '/' + uid
+
+        model_infothr = GetRequestThread(url, callback)
+        model_infothr.start()
+
+    def handle_model_attributions(self, r, *args, **kwargs):
+        json_data = r.json()
+        try:
+            self.append_to_attributions(f"\"{json_data['name']}\" ({json_data['viewerUrl']}) by {json_data['user']['username']} is licensed under {json_data['license']['fullName']} ({json_data['license']['url']}).")
+        except KeyError as err:
+            try:
+                self.append_to_attributions(f"Could not get attribution for UID: {self.uid}.")
+            except Exception as inner_err:
+                print(inner_err)
 
 def unregister():
     for cls in classes:
