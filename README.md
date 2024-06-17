@@ -6,14 +6,6 @@
 > Modified version by J. M Areeb Uzair (<https://github.com/areebuzair>) <br>
 > *readme.md* has been updated to reflect these changes
 
-> [!IMPORTANT]
-> To install the addon, click the **Code** button, then *Download ZIP*.
-> The ZIP folder can be installed into Blender just like any other addon.
-> For legal reasons, make sure you are in the **public** branch.
-
-![Screenshot 2024-06-17 225023](https://github.com/areebuzair/blender-plugin/assets/142584764/1f2dcafd-c763-48a7-908c-77f53d8c12f7)
-
-
 **Directly import and export models from and to Sketchfab in Blender**
 
 * [Installation](#installation)
@@ -28,8 +20,11 @@
 <br>
 
 ## Installation
-
-To install the addon, just download the **sketchfab-x-y-z.zip** file attached to the [latest release](https://github.com/sketchfab/blender-plugin/releases/latest), and install it as a regular blender addon (User Preferences -> Addons -> Install from file).
+- To install the addon, click the **Code** button, then *Download ZIP*.
+- Then, install it as a regular blender addon (User Preferences -> Addons -> Install from file).
+> [!IMPORTANT]
+> For legal reasons, make sure you are in the **public** branch.
+<p align="center"><img style="max-width:100%" src="https://github.com/areebuzair/blender-plugin/assets/142584764/1f2dcafd-c763-48a7-908c-77f53d8c12f7"></p>
 
 After installing the addon, two optional settings are available:
 
