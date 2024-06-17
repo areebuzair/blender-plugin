@@ -1,4 +1,6 @@
 """
+Original code from https://github.com/sketchfab/blender-plugin/tree/7e0356a9de9fa9d83bbd58af863b8cc599b3d1e2
+
 Copyright 2021 Sketchfab
 
 Licensed under the Apache License, Version 2.0 (the "License");

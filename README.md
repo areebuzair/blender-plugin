@@ -1,5 +1,14 @@
 # Sketchfab Blender Addon
 
+> Original code from <https://github.com/sketchfab/blender-plugin/tree/7e0356a9de9fa9d83bbd58af863b8cc599b3d1e2>
+> Modified version by J. M Areeb Uzair (<https://github.com/areebuzair>)
+> readme.md has been updated to reflect these changes
+
+> [!IMPORTANT]
+> To install the addon, click the **Code** button, then *Download ZIP*
+> The ZIP folder can be installed into Blender just like any other addon
+> For legal reasons, make sure you are in the **public** branch
+
 **Directly import and export models from and to Sketchfab in Blender**
 
 * [Installation](#installation)
