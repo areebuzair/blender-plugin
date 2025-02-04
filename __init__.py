@@ -2,7 +2,7 @@
 Original code from https://github.com/sketchfab/blender-plugin/tree/7e0356a9de9fa9d83bbd58af863b8cc599b3d1e2
 
 Modified version by J. M Areeb Uzair (https://github.com/areebuzair)
-Added a class called "SF_Attributions" to init.py. When downloading a model, if the model information is available publicly i.e. the model is public, a text file will automatically be generated which will contain the credits to the author and license information. The change was made to the SketchfabDownloadModel.execute() function.
+Added a class called "SF_Attributions" to init.py. When downloading a model, if the model information is available publicly i.e. the model is public, a text file will automatically be generated which will contain the credits to the author and license information. The change was made to the SketchfabDownloadModel.execute() function. Also replace EEVEE with EEVEE_NEXT.
 
 Copyright 2022 Sketchfab
 
@@ -46,7 +46,7 @@ bl_info = {
     'license': 'APACHE2',
     'deps': '',
     'version': (1, 6, 1),
-    "blender": (2, 80, 0),
+    "blender": (4, 2, 0),
     'location': 'View3D > Tools > Sketchfab',
     'warning': '',
     'wiki_url': 'https://github.com/sketchfab/blender-plugin/releases',
