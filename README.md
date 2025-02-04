@@ -2,6 +2,8 @@
 
 [**Here is a video demo.**](https://dl.dropbox.com/scl/fi/pkbbii14dbqvlkup32hgu/Auto_Attributions_Demo.mp4?rlkey=a430lu93ztqbd19ebps8l63d8&st=n6tedn4p&dl=0)
 
+![sketchfab-plugin](https://github.com/user-attachments/assets/cbb4ab51-50eb-48b7-9c9c-1da257198e0b)
+
 > Original code from <https://github.com/sketchfab/blender-plugin/tree/7e0356a9de9fa9d83bbd58af863b8cc599b3d1e2> <br>
 > Modified version by J. M Areeb Uzair (<https://github.com/areebuzair>) <br>
 > *readme.md* has been updated to reflect these changes
