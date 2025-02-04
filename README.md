@@ -23,7 +23,7 @@
 
 ## Installation
 
-To install the addon, just download the **sketchfab-x-y-z.zip** file attached to the [latest release](https://github.com/areebuzair/blender-plugin/releases/latest), and install it as a regular blender addon (User Preferences -> Addons -> Install from file).
+To install the addon, just download the **sketchfab-x-y-z.zip** file attached to the [release](https://github.com/areebuzair/blender-plugin/releases), and install it as a regular blender addon (User Preferences -> Addons -> Install from file).
 
 After installing the addon, two optional settings are available:
 
